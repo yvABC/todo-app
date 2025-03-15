@@ -111,7 +111,14 @@ class App extends Component {
     render() {
         if (this.state.loading) {
             return (
-                <div className="d-flex flex-column align-items-center justify-content-center vh-100 bg-dark">
+                <div
+                    className="d-flex flex-column align-items-center justify-content-center vh-100"
+                    style={{
+                        backgroundImage: "url('/6a4c0aae-05f9-463b-bddc-de9078710480.jpg')",
+                        backgroundSize: "cover",
+                        backgroundPosition: "center",
+                    }}
+                >
                     <Spinner animation="border" variant="light" className="mb-3" />
                     <h2 className="text-white">Loading...</h2>
                 </div>
@@ -121,7 +128,7 @@ class App extends Component {
         return (
             <div
                 style={{
-                    backgroundImage: "url('/MEDIA/IP 98 Love ❤.jpg')",
+                    backgroundImage: "url('/MEDIA/a88998fa-394c-42aa-95d7-b8faee200dcc.jpg')",
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                     minHeight: "100vh",
